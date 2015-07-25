@@ -56,3 +56,7 @@ body {
 .input-container {
     float: left;
 }
+
+.row {
+    float: left;
+}
