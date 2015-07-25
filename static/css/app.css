@@ -45,3 +45,14 @@ body {
     display: block;
 
 }
+
+.turtle_applet
+{
+    float: right;
+    margin-right: 61px;
+    margin-top: 22px;
+    }
+
+.input-container {
+    float: left;
+}

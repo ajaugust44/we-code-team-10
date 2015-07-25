@@ -1,7 +1,14 @@
 <html>
 <head>
 	<title>Turtle Maps</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/turtleStyle.css">   
 	<script type="text/javascript" src="js/user_input.js"></script>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
 </head>
@@ -14,10 +21,12 @@
 
 			    <br><br>
 			    <form class="turns" id="first-turn">
-				    <input type="radio" name="turn1" value="one" />turn right once
-					<input type="radio"  name="turn1" value="two" />turn right twice
-					<input type="radio"  name="turn1" value="three" />turn right three times
-					<input type="radio"  name="turn1" value="zero" />don't turn
+				    	<ul>
+					    <li><input type="radio" name="turn1" value="one" /> turn right once</li>
+						<li><input type="radio"  name="turn1" value="two" /> turn right twice</li>
+						<li><input type="radio"  name="turn1" value="three" /> turn right three times</li>
+						<li><input type="radio"  name="turn1" value="zero" /> don't turn</li>
+						</ul>
 				</form><br>
 
 			    <label for="var-y"> Y: </label>
@@ -25,10 +34,12 @@
 
 			    <br><br>
 			    <form class="turns" id="second-turn">
-				    <input type="radio" name="turn2" value="one" />turn right once
-					<input type="radio"  name="turn2" value="two" />turn right twice
-					<input type="radio"  name="turn2" value="three" />turn right three times
-					<input type="radio"  name="turn2" value="zero" />don't turn
+					    <ul>
+					    <li><input type="radio" name="turn2" value="one" /> turn right once</li>
+						<li><input type="radio"  name="turn2" value="two" /> turn right twice</li>
+						<li><input type="radio"  name="turn2" value="three" /> turn right three times</li>
+						<input type="radio"  name="turn2" value="zero" /> don't turn
+						</ul>
 				</form><br>
 
 				<label for="var-z"> Z: </label>
