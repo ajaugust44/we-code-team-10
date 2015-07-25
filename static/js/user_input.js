@@ -7,6 +7,11 @@ processUserInput = function ()
 	var x = document.getElementById("var-x").value;
 	var y = document.getElementById("var-y").value;
 	var z = document.getElementById("var-z").value;
+	var a = document.getElementById("var-a").value;
+	var b = document.getElementById("var-b").value;
+	var c = document.getElementById("var-c").value;
+	var d = document.getElementById("var-d").value;
+
 
 	if (x === null) {
 		x = 0;
@@ -20,8 +25,29 @@ processUserInput = function ()
 		z = 0;
 	}
 
+	if (a === null) {
+		a = 0;
+	}
+
+	if (b === null) {
+		b = 0;
+	}
+
+	if (c === null) {
+		c = 0;
+	}
+
+	if (d === null) {
+		d = 0;
+	}
+
 	var turn1 = getTurnInput("turn1");
 	var turn2 = getTurnInput("turn2");
+	var turn3 = getTurnInput("turn3");
+	var turn4 = getTurnInput("turn4");
+	var turn5 = getTurnInput("turn5");
+	var turn6 = getTurnInput("turn6");
+
 
 	
 	console.log(turn1);
@@ -55,8 +81,64 @@ processUserInput = function ()
 			turn2 = 0;
 	}
 
+	switch(turn3) {
+		case "one":
+			turn3 = 1;
+			break;
+		case "two":
+			turn3 = 2;
+			break;
+		case "three":
+			turn3 = 3;
+			break;
+		default:
+			turn3 = 0;
+	}
 
-	var varArray = [x, turn1, y, turn2, z];
+		switch(turn4) {
+		case "one":
+			turn4 = 1;
+			break;
+		case "two":
+			turn4 = 2;
+			break;
+		case "three":
+			turn4 = 3;
+			break;
+		default:
+			turn4 = 0;
+	}
+
+		switch(turn5) {
+		case "one":
+			turn5 = 1;
+			break;
+		case "two":
+			turn5 = 2;
+			break;
+		case "three":
+			turn5 = 3;
+			break;
+		default:
+			turn5 = 0;
+	}
+
+	switch(turn6) {
+		case "one":
+			turn6 = 1;
+			break;
+		case "two":
+			turn6 = 2;
+			break;
+		case "three":
+			turn6 = 3;
+			break;
+		default:
+			turn6 = 0;
+	}
+
+
+	var varArray = [x, turn1, y, turn2, z, turn3, a, turn4, b, turn5, c, turn6, d];
 
     settings = {'vars': []};
     localStorage.setItem('turtleGameVars', JSON.stringify(varArray));
