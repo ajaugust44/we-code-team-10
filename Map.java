@@ -22,6 +22,6 @@ public class Map
 	
 	public boolean isBlocked(int x, int y)
 	{
-		return grid[x][y];
+		return false;
 	}
 }
