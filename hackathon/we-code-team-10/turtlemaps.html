@@ -1,0 +1,52 @@
+<html>
+<head>
+	<title>Turtle Maps</title>
+	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
+</head>
+<body>
+	<div class="input-container">
+		<section id="variables">
+			<div id="create">
+				<p class="login-label"> enter variables here </p>
+			    <label for="username"> variable x </label>
+			    <input type="numeric" name="var-x" id="var-x"><br>
+
+			    <label> turn: </label><br>
+			    <div class="radios">
+				    <input type="radio" id="once-1" name="turning" value="turn right once" />turn right once
+					<input type="radio" id="twice-1" name="turning" value="turn right twice" />turn right twice
+					<input type="radio" id="three-times-1" name="turning" value="turn right three times" />turn right three times
+					<input type="radio" id="four-times-1" name="turning" value="turn right four times" />turn right four times <br>
+				</div><br>
+
+			    <label for="username"> variable y </label>
+			    <input type="numeric" name="var-y" id="var-y"><br>
+
+			    <label> turn: </label><br>
+			    <div class="radios">
+				    <input type="radio" id="once-2" name="turning" value="turn right once" />turn right once
+					<input type="radio" id="twice-2" name="turning" value="turn right twice" />turn right twice
+					<input type="radio" id="three-times-2" name="turning" value="turn right three times" />turn right three times
+					<input type="radio" id="four-times-2" name="turning" value="turn right four times" />turn right four times <br>
+				</div><br>
+
+			    <label for="username"> variable z </label>
+			    <input type="numeric" name="var-z" id="var-z"><br>
+
+			    <div id="subscribe-email"></div>
+			    <div id="street"></div>
+			    <div id="city"></div>
+			    <div id="state"></div>
+			    <div id="zipcode"></div>
+
+			   
+				<input type="hidden" name="selected-account" id="selected-account" value="">
+				<button class='actbutton' onclick="processUserInput()"> create </button> 
+				<div id="message"></div>
+			</div>
+
+		</section>
+	</div>
+</body>
+</html>
