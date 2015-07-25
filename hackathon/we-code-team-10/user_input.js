@@ -20,8 +20,8 @@ processUserInput = function ()
 		z = 0;
 	}
 
-	var turn1 = document.getElementById("first-turn").value;
-	var turn2 = document.getElementById("second-turn").value;
+	var turn1 = getTurnInput("turn1");
+	var turn2 = getTurnInput("turn2");
 
 	
 	console.log(turn1);
@@ -60,6 +60,17 @@ processUserInput = function ()
 
     settings = {'vars': []};
     localStorage.setItem('turtleGameVars', JSON.stringify(varArray));
+}
+
+function getTurnInput(radioGroupName) {
+    var choices = document.getElementsByName(radioGroupName);
+    for (var i = 0, l = choices.length; i < l; i++)
+    {
+        if (choices[i].checked)
+        {
+            return choices[i].value;
+        }
+    }
 }
 
 
