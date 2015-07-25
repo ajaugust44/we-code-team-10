@@ -38,3 +38,10 @@ body {
     background: white ;
     color: black ;
 }
+
+.homeicon {
+    margin-top: 55px;
+    width: 48px;
+    display: block;
+
+}

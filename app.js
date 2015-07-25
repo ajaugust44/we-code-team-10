@@ -183,6 +183,11 @@ app.get("/static/sidebar/js/:staticFilename", function (request, response) {
 app.get("/static/js/:staticFilename", function (request, response) {
     response.sendfile("static/js/" + request.params.staticFilename);
 });
+
+// This is for serving files in the static directory
+app.get("/static/images/:staticFilename", function (request, response) {
+    response.sendfile("static/images/" + request.params.staticFilename);
+});
 //app.use(express.static(__dirname + '/static'));
 
 function initServer() {

@@ -40,12 +40,21 @@
          $(".turtle_game").load("turtlemaps.html");
 
     });
-    
+    var open = false;
     $(document).on("click", ".homeicon", function(evt)
     {
-         var sidebar = document.getElementsByClassName("uib_w_2");
-         document.getElementById(sidebar).style.marginLeft = "0px";
+         //var sidebar = document.getElementsByClassName("uib_w_2");
+         
+       
+         if(open) {
+            document.getElementById("sidebarhome").style.left = "-200px";
+         open = false;    
+         }
+         else {
+              document.getElementById("sidebarhome").style.left = "0px";
+         open = true;
 
+         }
     });
 
     }

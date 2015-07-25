@@ -91,6 +91,7 @@ form.urow {
 .narrow-control {
   display: table-cell;
 }
+
 /* wrapping column */
 .wrapping-col.right > *,
 .wrapping-col.right > .afScrollPanel > * {
