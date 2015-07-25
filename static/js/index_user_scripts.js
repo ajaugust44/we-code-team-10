@@ -41,6 +41,13 @@
 
     });
     
+    $(document).on("click", ".homeicon", function(evt)
+    {
+         var sidebar = document.getElementsByClassName("uib_w_2");
+         document.getElementById(sidebar).style.marginLeft = "0px";
+
+    });
+
     }
  document.addEventListener("app.Ready", register_event_handlers, false);
 })();
