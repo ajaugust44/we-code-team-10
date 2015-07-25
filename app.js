@@ -136,6 +136,55 @@ app.get("/static/:staticFilename", function (request, response) {
     response.sendfile("static/" + request.params.staticFilename);
 });
 
+// This is for serving files in the static directory
+app.get("/static/media_button_bar/css/:staticFilename", function (request, response) {
+    response.sendfile("static/media_button_bar/css/" + request.params.staticFilename);
+});
+
+// This is for serving files in the static directory
+app.get("/static/app_framework/2.1/css/:staticFilename", function (request, response) {
+    response.sendfile("static/app_Framework/2.1/css/" + request.params.staticFilename);
+});
+
+// This is for serving files in the static directory
+app.get("/static/css/:staticFilename", function (request, response) {
+    response.sendfile("static/css/" + request.params.staticFilename);
+});
+
+// This is for serving files in the static directory
+app.get("/static/js/:staticFilename", function (request, response) {
+    response.sendfile("static/js/" + request.params.staticFilename);
+});
+
+// This is for serving files in the static directory
+app.get("/static/xdk/:staticFilename", function (request, response) {
+    response.sendfile("static/xdk/" + request.params.staticFilename);
+});
+
+// This is for serving files in the static directory
+app.get("/static/xdk/ad/:staticFilename", function (request, response) {
+    response.sendfile("static/xdk/ad/" + request.params.staticFilename);
+});
+// This is for serving files in the static directory
+app.get("/static/app_Framework/2.1/:staticFilename", function (request, response) {
+    response.sendfile("static/app_Framework/2.1/" + request.params.staticFilename);
+});
+
+// This is for serving files in the static directory
+app.get("/static/lib/:staticFilename", function (request, response) {
+    response.sendfile("static/lib/" + request.params.staticFilename);
+});
+// This is for serving files in the static directory
+app.get("/static/sidebar/js/:staticFilename", function (request, response) {
+    response.sendfile("static/sidebar/js/" + request.params.staticFilename);
+});
+
+// This is for serving files in the static directory
+app.get("/static/js/:staticFilename", function (request, response) {
+    response.sendfile("static/js/" + request.params.staticFilename);
+});
+//app.use(express.static(__dirname + '/static'));
+
 function initServer() {
   // When we start the server, we must load the stored data
   var defaultList = "[]";
