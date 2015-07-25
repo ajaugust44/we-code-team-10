@@ -37,6 +37,8 @@
     $(document).on("click", ".uib_w_12", function(evt)
     {
          activate_subpage("#logic_page"); 
+         $(".turtle_game").load("turtlemaps.html");
+
     });
     
     }
