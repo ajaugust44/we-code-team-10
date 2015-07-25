@@ -1,0 +1,12 @@
+.row {
+background-color: lightGray;
+padding: 3em;
+}
+
+.turns {
+	padding: 1em;
+}
+
+.turns li {
+	list-style: none;
+}
